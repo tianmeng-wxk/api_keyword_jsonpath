@@ -1,0 +1,4 @@
+2020-07-29 20:38:35 test_cases.py INFO setup
+2020-07-29 20:38:45 test_cases.py INFO 开始登录
+2020-07-29 20:38:49 login.py INFO 未找到元素
+2020-07-29 20:38:49 test_cases.py INFO teardown
