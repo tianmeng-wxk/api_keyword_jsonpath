@@ -1,8 +1,11 @@
+import unittest,os,sys,time
+path = "D:\\api_keywork_jsonpath\\"
+sys.path.append(path)
 from HTMLTestRunner import HTMLTestRunner
-import unittest,os,time
 from test_case.test_cases import TestCase
 from datetime import datetime
-from common.common import send_mail,send_email
+from common.common import send_mail,send_email,Logger
+
 
 #curPath = os.path.abspath(os.path.dirname(__file__))
 
