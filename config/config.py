@@ -1,4 +1,6 @@
-import configparser
+import configparser,os,sys
+path = "D:\\api_keywork_jsonpath\\"
+sys.path.append(path)
 #用例目录
 test_case_path  = '../cases/'
 
