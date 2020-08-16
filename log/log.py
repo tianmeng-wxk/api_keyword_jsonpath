@@ -7,7 +7,7 @@ class Logger:
 
         if not logger.handlers:
             sh = logging.StreamHandler()
-            fh=logging.FileHandler(filename="D:\\api_keywork_jsonpath\\log\\logfile\\{}_log".format(time.strftime("%Y-%m-%d  %H-%M-%S",time.localtime())),encoding="utf-8")
+            fh=logging.FileHandler(filename="../log/logfile/{}_log".format(time.strftime("%Y-%m-%d  %H-%M-%S",time.localtime())),encoding="utf-8")
             formator=logging.Formatter(fmt="%(asctime)s %(filename)s %(levelname)s %(msg)s", datefmt="%Y-%m-%d %X")
             sh.setFormatter(formator)
             fh.setFormatter(formator)
