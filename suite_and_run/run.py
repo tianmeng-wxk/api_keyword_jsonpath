@@ -1,4 +1,6 @@
-import pytest,os,time
+import pytest,os,time,sys
+path = 'D:\\api_keywork_jsonpath'
+sys.path.append(path)
 from common.common import send_email,send_mail
 
 if __name__ == '__main__':
