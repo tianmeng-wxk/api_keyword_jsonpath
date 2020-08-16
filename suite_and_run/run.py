@@ -1,5 +1,5 @@
 import pytest,os,time
-from common.common import send_email,send_mail
+#from common.common import send_email,send_mail
 
 if __name__ == '__main__':
     # pytest.main()
