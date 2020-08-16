@@ -1,125 +1,5 @@
 [ {
-  "uid" : "e78e2fb64ea2328f",
-  "name" : "test_collection_09___http___39_98_138_157_5000_api_addcart_",
-  "time" : {
-    "start" : 1597593810514,
-    "stop" : 1597593810619,
-    "duration" : 105
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3a791822cfa59659",
-  "name" : "test_collection_06___http___39_98_138_157_5000_api_login_",
-  "time" : {
-    "start" : 1597593810155,
-    "stop" : 1597593810264,
-    "duration" : 109
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "488def5fe17f1a56",
-  "name" : "test_collection_03___http___39_98_138_157_5000_api_getuserinfo_",
-  "time" : {
-    "start" : 1597593809466,
-    "stop" : 1597593809921,
-    "duration" : 455
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "83716cfaf126f97a",
-  "name" : "test_collection_08___http___39_98_138_157_5000_api_getuserinfo_",
-  "time" : {
-    "start" : 1597593810387,
-    "stop" : 1597593810511,
-    "duration" : 124
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "bb1d78591555bb1f",
-  "name" : "test_collection_4___http___39_98_138_157_5000_api_addcart_",
-  "time" : {
-    "start" : 1597595516126,
-    "stop" : 1597595516240,
-    "duration" : 114
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a3283d124a2c1fc1",
-  "name" : "test_collection_3___http___39_98_138_157_5000_api_getuserinfo_",
-  "time" : {
-    "start" : 1597595516015,
-    "stop" : 1597595516122,
-    "duration" : 107
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "19e4821bf706ec28",
-  "name" : "test_collection_02___http___39_98_138_157_5000_api_getproductinfo_productid_8888_",
-  "time" : {
-    "start" : 1597593809351,
-    "stop" : 1597593809463,
-    "duration" : 112
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "412d0f41cac6f13f",
-  "name" : "test_collection_1___http___39_98_138_157_5000_api_login_",
-  "time" : {
-    "start" : 1597595515772,
-    "stop" : 1597595515901,
-    "duration" : 129
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "64d6282dafeb62d0",
-  "name" : "test_collection_04___http___39_98_138_157_5000_api_addcart_",
-  "time" : {
-    "start" : 1597593809924,
-    "stop" : 1597593810037,
-    "duration" : 113
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f0a8d37b847d1b54",
-  "name" : "test_collection_07___http___39_98_138_157_5000_api_getproductinfo_productid_8888_",
-  "time" : {
-    "start" : 1597593810275,
-    "stop" : 1597593810385,
-    "duration" : 110
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a0ae4d8c6ecfe5e1",
-  "name" : "test_collection_2___http___39_98_138_157_5000_api_getproductinfo_productid_8888_",
-  "time" : {
-    "start" : 1597595515906,
-    "stop" : 1597595516012,
-    "duration" : 106
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "752592362c0da914",
-  "name" : "test_collection_05___http___39_98_138_157_5000_api_createorder_",
-  "time" : {
-    "start" : 1597593810048,
-    "stop" : 1597593810151,
-    "duration" : 103
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "628635e69b39f90e",
+  "uid" : "87c12dfebc4671a6",
   "name" : "test_collection_01___http___39_98_138_157_5000_api_login_",
   "time" : {
     "start" : 1597593809205,
@@ -129,17 +9,137 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9c40e2cdfe22d3e8",
-  "name" : "test_collection_5___http___39_98_138_157_5000_api_createorder_",
+  "uid" : "77e12457b6aa18bd",
+  "name" : "test_collection_02___http___39_98_138_157_5000_api_getproductinfo_productid_8888_",
   "time" : {
-    "start" : 1597595516242,
-    "stop" : 1597595516342,
-    "duration" : 100
+    "start" : 1597593809351,
+    "stop" : 1597593809463,
+    "duration" : 112
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "344cb74f63b9e869",
+  "uid" : "7b2e4b0f19e785a3",
+  "name" : "test_collection_3___http___39_98_138_157_5000_api_getuserinfo_",
+  "time" : {
+    "start" : 1597596140047,
+    "stop" : 1597596140140,
+    "duration" : 93
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bb07c8f1bbffc5fc",
+  "name" : "test_collection_1___http___39_98_138_157_5000_api_login_",
+  "time" : {
+    "start" : 1597596139834,
+    "stop" : 1597596139943,
+    "duration" : 109
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ef0609aecacfec7d",
+  "name" : "test_collection_4___http___39_98_138_157_5000_api_addcart_",
+  "time" : {
+    "start" : 1597596140151,
+    "stop" : 1597596140259,
+    "duration" : 108
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1b039a0dbe930ce1",
+  "name" : "test_collection_08___http___39_98_138_157_5000_api_getuserinfo_",
+  "time" : {
+    "start" : 1597593810387,
+    "stop" : 1597593810511,
+    "duration" : 124
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d5983f8e36a7e6be",
+  "name" : "test_collection_07___http___39_98_138_157_5000_api_getproductinfo_productid_8888_",
+  "time" : {
+    "start" : 1597593810275,
+    "stop" : 1597593810385,
+    "duration" : 110
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8879b08440a5c86d",
+  "name" : "test_collection_04___http___39_98_138_157_5000_api_addcart_",
+  "time" : {
+    "start" : 1597593809924,
+    "stop" : 1597593810037,
+    "duration" : 113
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "35d366aa416e23d0",
+  "name" : "test_collection_09___http___39_98_138_157_5000_api_addcart_",
+  "time" : {
+    "start" : 1597593810514,
+    "stop" : 1597593810619,
+    "duration" : 105
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ceed0ba7d9d3ae9",
+  "name" : "test_collection_03___http___39_98_138_157_5000_api_getuserinfo_",
+  "time" : {
+    "start" : 1597593809466,
+    "stop" : 1597593809921,
+    "duration" : 455
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1ddd76339200a210",
+  "name" : "test_collection_05___http___39_98_138_157_5000_api_createorder_",
+  "time" : {
+    "start" : 1597593810048,
+    "stop" : 1597593810151,
+    "duration" : 103
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "628042fd7ed185b3",
+  "name" : "test_collection_5___http___39_98_138_157_5000_api_createorder_",
+  "time" : {
+    "start" : 1597596140262,
+    "stop" : 1597596140370,
+    "duration" : 108
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "75ff45be5513664",
+  "name" : "test_collection_06___http___39_98_138_157_5000_api_login_",
+  "time" : {
+    "start" : 1597593810155,
+    "stop" : 1597593810264,
+    "duration" : 109
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e08c550b341876b0",
+  "name" : "test_collection_2___http___39_98_138_157_5000_api_getproductinfo_productid_8888_",
+  "time" : {
+    "start" : 1597596139945,
+    "stop" : 1597596140044,
+    "duration" : 99
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4cdd3665f94e0001",
   "name" : "test_collection_10___http___39_98_138_157_5000_api_createorder_",
   "time" : {
     "start" : 1597593810621,
