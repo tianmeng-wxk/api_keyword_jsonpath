@@ -26,7 +26,7 @@ def suite():
         pass
 
     with open(report_file, 'wb')as file:
-        runner = HTMLTestRunner(stream=file,verbosity=2, title="接口测试", description="接口测试")
+        runner = HTMLTestRunner(stream=file, title="接口测试", description="接口测试")
         runner.run(suite)
 
     send_email(report_file)
