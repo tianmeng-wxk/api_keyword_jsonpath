@@ -1,5 +1,8 @@
-import configparser,os
-
+import os
+import configparser
+import sys
+#当前文件所在目录
+base_path = os.getcwd()
 
 #用例目录
 test_case_path  = '../cases/'
@@ -8,7 +11,7 @@ test_case_path  = '../cases/'
 report_path = '../report/'
 
 #发送邮件配置
-test_config_file = "../config/config.ini"
+test_config_file = os.path.join(base_path, '../config', 'config.ini')
 rc = configparser.ConfigParser()
 rc.read(test_config_file, encoding='utf-8')
 host = rc.get('email', 'host')
