@@ -1,6 +1,4 @@
-import configparser,os,sys
-path = "D:\\api_keywork_jsonpath\\"
-sys.path.append(path)
+import configparser
 #用例目录
 test_case_path  = '../cases/'
 
@@ -8,7 +6,7 @@ test_case_path  = '../cases/'
 report_path = '../report/'
 
 #发送邮件配置
-test_config_file = "../config/config.ini"
+test_config_file = "D:\\api_keywork_jsonpath\\config\\config.ini"
 rc = configparser.ConfigParser()
 rc.read(test_config_file, encoding='utf-8')
 host = rc.get('email', 'host')
