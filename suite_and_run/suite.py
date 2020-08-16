@@ -16,10 +16,10 @@ def suite():
     suite = unittest.TestSuite()
     suite.addTests(unittest.TestLoader().loadTestsFromTestCase(TestCase))
     report_path = report_path
-    #report_file = report_path+"{}_html_report.html".format(time.strftime("%Y_%m_%d %H-%M-%S",time.localtime()))
-    time = datetime.now()
-    now = time.strftime('%Y-%m-%d %H-%M-%S')
-    report_file = report_path + now + "_html_report.html"
+    report_file = report_path+"{}_html_report.html".format(time.strftime("%Y_%m_%d %H-%M-%S",time.localtime()))
+    # time = datetime.now()
+    # now = time.strftime('%Y-%m-%d %H-%M-%S')
+    # report_file = report_path + now + "_html_report.html"
     if not os.path.exists(report_path):
         os.mkdir(report_path)
     else:
