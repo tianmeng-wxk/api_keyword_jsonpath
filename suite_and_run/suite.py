@@ -25,7 +25,7 @@ def suite():
     else:
         pass
 
-    with open(report_file, 'wb')as file:
+    with open(report_file.replace(u'\xa0', u''), 'wb')as file:
         runner = HTMLTestRunner(stream=file, verbosity=2, title="接口测试", description="接口测试")
         runner.run(suite)
 
