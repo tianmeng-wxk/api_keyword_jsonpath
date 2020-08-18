@@ -1,3 +1,4 @@
+#coding=utf-8
 import unittest,os,sys,time
 path = "D:\\api_keywork_jsonpath"
 sys.path.append(path)
