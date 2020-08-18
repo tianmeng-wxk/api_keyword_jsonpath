@@ -16,7 +16,7 @@ def suite():
     suite = unittest.TestSuite()
     suite.addTests(unittest.TestLoader().loadTestsFromTestCase(TestCase))
     report_path = report_path
-    report_file = report_path+"{}_html_report.html".format(time.strftime("%Y_%m_%d %H-%M-%S",time.localtime()))
+    report_file = report_path+"{}_html_report.html".format(time.strftime("%Y-%m-%d %H-%M-%S",time.localtime()))
     # time = datetime.now()
     # now = time.strftime('%Y-%m-%d %H-%M-%S')
     # report_file = report_path + now + "_html_report.html"
@@ -25,7 +25,7 @@ def suite():
     else:
         pass
 
-    with open(report_file.replace(u'\xa0', u''), 'wb')as file:
+    with open(report_file, 'wb')as file:
         runner = HTMLTestRunner(stream=file, verbosity=2, title="接口测试", description="接口测试")
         runner.run(suite)
 
