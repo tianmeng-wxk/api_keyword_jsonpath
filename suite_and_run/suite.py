@@ -30,6 +30,6 @@ def suite():
         runner = HTMLTestRunner(stream=file, verbosity=2, title="接口测试", description="接口测试")
         runner.run(suite)
 
-    send_email(report_file)
+    send_mail(report_file)
 if __name__ == '__main__':
     suite()
