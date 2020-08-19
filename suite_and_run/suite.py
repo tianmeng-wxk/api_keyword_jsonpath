@@ -1,6 +1,6 @@
 #coding=utf-8
 import unittest,os,sys,time
-path = "D:\\api_keywork_jsonpath"
+path = "../"
 sys.path.append(path)
 from HTMLTestRunner import HTMLTestRunner
 from test_case.test_cases import TestCase
