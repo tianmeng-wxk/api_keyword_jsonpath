@@ -4,7 +4,11 @@ class Logger:
 
         logger=logging.getLogger("logger")
         logger.setLevel(logging.DEBUG)
-
+        # debug
+        # info
+        # warning
+        # error
+        # critical
         if not logger.handlers:
             sh = logging.StreamHandler()
             fh=logging.FileHandler(filename="../log/logfile/{}_log".format(time.strftime("%Y-%m-%d  %H-%M-%S",time.localtime())),encoding="utf-8")
