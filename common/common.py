@@ -5,6 +5,7 @@ import smtplib
 from email.mime.text import MIMEText#支持html格式
 from email.mime.multipart import MIMEMultipart
 from email.header import Header
+import mysql.connector,zipfile
 
 
 class excelData:
@@ -117,4 +118,92 @@ def send_mail(email_path):
         Logger().log().info("发送邮件失败，失败信息：{}".format(e))
 
 
+def connect_mysql(sql):
+    ccon=mysql.connector.connect(
+        host='localhost',
+        user='root',
+        password='wxk111',
+        database='first'
+    )
+    print(ccon)
+    cmd=ccon.cursor()
+    # cmd.execute("show databases;")
+    # for x in cmd:
+    #     print(x)
+    cmd.execute("{}".format(sql))
+    res=cmd.fetchall()
+    return res[0][0]
 
+def get_sql_data(sql):
+    sql = connect_mysql(sql)
+    return sql
+
+
+def link_oracle():
+    import cx_Oracle
+    #conn = cx_Oracle.connect('name/password@ip:port/serverName')      # 连接数据库
+    conn = cx_Oracle.connect('cwhs/cwhs@192.168.1.201:1521/helowin')
+    c = conn.cursor()                                                 # 获取cursor
+    x = c.execute("select * from ZZ_KMZZ")                            # 查询
+    print("result: ", x.fetchone())
+    c.close()                                                         # 关闭cursor
+    conn.close()
+#压缩
+def zipDir(dirpath,outFullName):
+    """
+    压缩指定文件夹
+    :param dirpath: 目标文件夹路径
+    :param outFullName: 压缩文件保存路径+xxxx.zip
+    :return: 无
+    """
+    zip = zipfile.ZipFile(outFullName,"w",zipfile.ZIP_DEFLATED)
+    for path,dirnames,filenames in os.walk(dirpath):
+        # 去掉目标跟路径，只对目标文件夹下边的文件及文件夹进行压缩
+        fpath = path.replace(dirpath,'')
+
+        for filename in filenames:
+            zip.write(os.path.join(path,filename),os.path.join(fpath,filename))
+    zip.close()
+#解压
+def decompression():
+    zip_file = zipfile.ZipFile("D:/WebContent/assist_web.zip")
+    zip_list = zip_file.namelist()
+    for f in zip_list:
+        zip_file.extract(f, "D:/WebContent/assist_web")  # 循环解压文件到指定目录
+    zip_file.close()
+#md5加密
+def hashmd5(str):
+    import hashlib
+    return hashlib.md5(str.encode('utf-8')).hexdigest()
+
+if __name__ == '__main__':
+    link_oracle()
+
+# import cx_Oracle as oracle
+# from readConfig import get_config_values
+# from utils.resutltodict import dict_fetchall
+#
+#
+# def execute_oracle_sql_query(sql, params):
+#     """
+#     执行oracle sql查询语句
+#     :param sql: sql语句，变量使用 :var或者:1,:2表示
+#     :param params: 变量值，传入元祖
+#     :return: queryset
+#     """
+#     dsn_tns = oracle.makedsn(get_config_values('oracle', 'host'), get_config_values('oracle', 'port'),
+#                              get_config_values('oracle', 'sid'))
+#     print(dsn_tns)
+#     conn = oracle.connect(user=get_config_values('oracle', 'user'), password=get_config_values('oracle', 'password'),
+#                           dsn=dsn_tns)
+#     cursor = conn.cursor()
+#     cursor.execute(sql, params)
+#     qryset = dict_fetchall(cursor)
+#     cursor.close()
+#     conn.close()
+#     return qryset
+#
+# if __name__ == '__main__':
+#     sql = """select t.*,rowid from ch_info_dictitem t where t.groupid=:1"""
+#     params = ('WorkFlowCategory', )
+#     print(execute_oracle_sql_query(sql=sql, params=params

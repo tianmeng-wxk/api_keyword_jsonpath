@@ -43,4 +43,5 @@ class TestCase(unittest.TestCase):
         Logger().log().info("----------------断言结束-----------------")
 
 if __name__ == '__main__':
+    #运行
     unittest.main()

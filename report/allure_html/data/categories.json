@@ -1,5 +1,125 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "TypeError: test_collection() missing 1 required positional argument: 'describe'",
+      "children" : [ {
+        "name" : "test_collection_01___http___39_98_138_157_5000_api_login_",
+        "uid" : "3d54cc9a368b0f52",
+        "parentUid" : "1d669d3bf6c0e935cc4f8cd2d4d27a9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1609246704923,
+          "stop" : 1609246704923,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_collection_02___http___39_98_138_157_5000_api_getproductinfo_",
+        "uid" : "840c7d619c0a9b89",
+        "parentUid" : "1d669d3bf6c0e935cc4f8cd2d4d27a9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1609246705017,
+          "stop" : 1609246705017,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_collection_03___http___39_98_138_157_5000_api_getuserinfo_",
+        "uid" : "3d829e221e4341e3",
+        "parentUid" : "1d669d3bf6c0e935cc4f8cd2d4d27a9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1609246705059,
+          "stop" : 1609246705059,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_collection_04___http___39_98_138_157_5000_api_addcart_",
+        "uid" : "103a213c9470e528",
+        "parentUid" : "1d669d3bf6c0e935cc4f8cd2d4d27a9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1609246705102,
+          "stop" : 1609246705102,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_collection_05___http___39_98_138_157_5000_api_createorder_",
+        "uid" : "bd042c1e0c019e3e",
+        "parentUid" : "1d669d3bf6c0e935cc4f8cd2d4d27a9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1609246705143,
+          "stop" : 1609246705144,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1d669d3bf6c0e935cc4f8cd2d4d27a9b"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: 300 != 200",
+      "children" : [ {
+        "name" : "test_collection_10___http___39_98_138_157_5000_api_createorder_",
+        "uid" : "a33b019dd2d822d9",
+        "parentUid" : "9cb7dbd8b85312a534859fb77759cb99",
+        "status" : "failed",
+        "time" : {
+          "start" : 1609246705899,
+          "stop" : 1609246705990,
+          "duration" : 91
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_collection_5___http___39_98_138_157_5000_api_createorder_",
+        "uid" : "2a8e2e27ab3ca47",
+        "parentUid" : "9cb7dbd8b85312a534859fb77759cb99",
+        "status" : "failed",
+        "time" : {
+          "start" : 1609412057903,
+          "stop" : 1609412057998,
+          "duration" : 95
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_collection_4___http___39_98_138_157_5000_api_addcart_",
+        "uid" : "1426311f527e1325",
+        "parentUid" : "9cb7dbd8b85312a534859fb77759cb99",
+        "status" : "failed",
+        "time" : {
+          "start" : 1609412148340,
+          "stop" : 1609412148456,
+          "duration" : 116
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9cb7dbd8b85312a534859fb77759cb99"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
 }
