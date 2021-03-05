@@ -1,0 +1,101 @@
+[ {
+  "uid" : "7fdab277afcbca29",
+  "name" : "title",
+  "time" : {
+    "start" : 1614924670310,
+    "stop" : 1614924670420,
+    "duration" : 110
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "8479c7311a108dd8",
+  "name" : "title",
+  "time" : {
+    "start" : 1614924668286,
+    "stop" : 1614924668396,
+    "duration" : 110
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8085026608717214",
+  "name" : "title",
+  "time" : {
+    "start" : 1614924667749,
+    "stop" : 1614924667870,
+    "duration" : 121
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4a25e888b2fc313",
+  "name" : "title",
+  "time" : {
+    "start" : 1614924663209,
+    "stop" : 1614924663330,
+    "duration" : 121
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c51604615cd12d2b",
+  "name" : "title",
+  "time" : {
+    "start" : 1614924666994,
+    "stop" : 1614924667108,
+    "duration" : 114
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2098d41195a87db5",
+  "name" : "title",
+  "time" : {
+    "start" : 1614924669302,
+    "stop" : 1614924669415,
+    "duration" : 113
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9af2189564e6cb4e",
+  "name" : "title",
+  "time" : {
+    "start" : 1614924668788,
+    "stop" : 1614924668904,
+    "duration" : 116
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a4675fca05c3617",
+  "name" : "title",
+  "time" : {
+    "start" : 1614924662746,
+    "stop" : 1614924662858,
+    "duration" : 112
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "218a4b12ca5a7c8",
+  "name" : "title",
+  "time" : {
+    "start" : 1614924669800,
+    "stop" : 1614924669918,
+    "duration" : 118
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8b96d1197ede862",
+  "name" : "title",
+  "time" : {
+    "start" : 1614924670781,
+    "stop" : 1614924670928,
+    "duration" : 147
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

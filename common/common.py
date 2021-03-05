@@ -21,8 +21,9 @@ class excelData:
                         sheet=workbook["Sheet1"]
                         #定义外层的list结构
                         lists=[]
-                        #读取rows
+                        #读取rows可以遍历每一行
                         row_sheet=sheet.iter_rows()
+                        print("row_sheet:",row_sheet)
                         #循环读取每一行，需要赋值每一行为一个list
                         for item in row_sheet:
                             #如果取到第一行就跳出去直接取下一行
@@ -41,25 +42,32 @@ class excelData:
         return dict
 
 
+#切割替换测试数据
 depend = {}
 class Convert:
     def convert(self,body):
-        listsplitvars = body.split("$")
+        listSplitVars = body.split("$")
         num = 0
-        for listsplitvar in listsplitvars:
+        for listSplitVar in listSplitVars:
             if num % 2 == 1:
-                strchuck = listsplitvar
-                #环境变量
+                strchuck = listSplitVar
+                #获取变量，即字典中的key
                 envar =strchuck[:strchuck.find(".")]
+                #通过key拿出数据
                 varvalue = depend[envar]
+                #拿出jsonpath
                 varjsonpath = strchuck[strchuck.find(".")+1:]
+                #json串转为字典
                 varjsonres = json.loads(varvalue)
+                #取jsonpath中的值
                 varchuck = jsonpath.jsonpath(varjsonres,expr="$."+varjsonpath)
-                listsplitvars[num]=str(varchuck[0])
+                #将取到的值替换列表中的值
+                listSplitVars[num]=str(varchuck[0])
             num += 1
-        listsplitvars = "".join(listsplitvars)
+        #
+        listSplitVars = "".join(listSplitVars)
 
-        return listsplitvars
+        return listSplitVars
 
 #发送附件邮件
 def send_email(email_path):
@@ -207,3 +215,5 @@ if __name__ == '__main__':
 #     sql = """select t.*,rowid from ch_info_dictitem t where t.groupid=:1"""
 #     params = ('WorkFlowCategory', )
 #     print(execute_oracle_sql_query(sql=sql, params=params
+if __name__ == '__main__':
+    excelData().getExcel()

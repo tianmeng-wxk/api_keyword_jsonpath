@@ -1,0 +1,39 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: 断言失败\nassert 300 == 200",
+      "children" : [ {
+        "name" : "title",
+        "uid" : "8085026608717214",
+        "parentUid" : "18bd194396cca0311db5d3521a4af97b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614924667749,
+          "stop" : 1614924667870,
+          "duration" : 121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "title",
+        "uid" : "7fdab277afcbca29",
+        "parentUid" : "18bd194396cca0311db5d3521a4af97b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614924670310,
+          "stop" : 1614924670420,
+          "duration" : 110
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      } ],
+      "uid" : "18bd194396cca0311db5d3521a4af97b"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

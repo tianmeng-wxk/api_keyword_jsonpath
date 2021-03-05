@@ -1,0 +1,277 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "LAPTOP-JHEF7VRV",
+    "children" : [ {
+      "name" : "12832-MainThread",
+      "children" : [ {
+        "name" : "title",
+        "uid" : "52aa6540c6f2931f",
+        "parentUid" : "ff2373e77ff79b4fef85865f58c53ec8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924492217,
+          "stop" : 1614924492328,
+          "duration" : 111
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "title",
+        "uid" : "abd8a47511a7c1d4",
+        "parentUid" : "ff2373e77ff79b4fef85865f58c53ec8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924495205,
+          "stop" : 1614924495307,
+          "duration" : 102
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "2a3416370269c8e",
+        "parentUid" : "ff2373e77ff79b4fef85865f58c53ec8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924494177,
+          "stop" : 1614924494289,
+          "duration" : 112
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "title",
+        "uid" : "964dda162c0b63ef",
+        "parentUid" : "ff2373e77ff79b4fef85865f58c53ec8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924494690,
+          "stop" : 1614924494807,
+          "duration" : 117
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "bf58dfd936a56344",
+        "parentUid" : "ff2373e77ff79b4fef85865f58c53ec8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924490245,
+          "stop" : 1614924490348,
+          "duration" : 103
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "title",
+        "uid" : "6a49200d68f44768",
+        "parentUid" : "ff2373e77ff79b4fef85865f58c53ec8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924491219,
+          "stop" : 1614924491340,
+          "duration" : 121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "24ad305c3b32323c",
+        "parentUid" : "ff2373e77ff79b4fef85865f58c53ec8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924490706,
+          "stop" : 1614924490827,
+          "duration" : 121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "6b48cec77e42a6b4",
+        "parentUid" : "ff2373e77ff79b4fef85865f58c53ec8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924496271,
+          "stop" : 1614924496379,
+          "duration" : 108
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "title",
+        "uid" : "a4e5b6fda32bfaf4",
+        "parentUid" : "ff2373e77ff79b4fef85865f58c53ec8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614924491702,
+          "stop" : 1614924491823,
+          "duration" : 121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "title",
+        "uid" : "3b98bcc7113d9cf0",
+        "parentUid" : "ff2373e77ff79b4fef85865f58c53ec8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614924495708,
+          "stop" : 1614924495806,
+          "duration" : 98
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      } ],
+      "uid" : "ff2373e77ff79b4fef85865f58c53ec8"
+    }, {
+      "name" : "11980-MainThread",
+      "children" : [ {
+        "name" : "title",
+        "uid" : "4a4675fca05c3617",
+        "parentUid" : "cdf0d23c0b614a4674c641038b258f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924662746,
+          "stop" : 1614924662858,
+          "duration" : 112
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "title",
+        "uid" : "218a4b12ca5a7c8",
+        "parentUid" : "cdf0d23c0b614a4674c641038b258f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924669800,
+          "stop" : 1614924669918,
+          "duration" : 118
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "e4a25e888b2fc313",
+        "parentUid" : "cdf0d23c0b614a4674c641038b258f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924663209,
+          "stop" : 1614924663330,
+          "duration" : 121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "8b96d1197ede862",
+        "parentUid" : "cdf0d23c0b614a4674c641038b258f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924670781,
+          "stop" : 1614924670928,
+          "duration" : 147
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "title",
+        "uid" : "9af2189564e6cb4e",
+        "parentUid" : "cdf0d23c0b614a4674c641038b258f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924668788,
+          "stop" : 1614924668904,
+          "duration" : 116
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "title",
+        "uid" : "8479c7311a108dd8",
+        "parentUid" : "cdf0d23c0b614a4674c641038b258f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924668286,
+          "stop" : 1614924668396,
+          "duration" : 110
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "title",
+        "uid" : "7fdab277afcbca29",
+        "parentUid" : "cdf0d23c0b614a4674c641038b258f85",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614924670310,
+          "stop" : 1614924670420,
+          "duration" : 110
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "title",
+        "uid" : "c51604615cd12d2b",
+        "parentUid" : "cdf0d23c0b614a4674c641038b258f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924666994,
+          "stop" : 1614924667108,
+          "duration" : 114
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "8085026608717214",
+        "parentUid" : "cdf0d23c0b614a4674c641038b258f85",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614924667749,
+          "stop" : 1614924667870,
+          "duration" : 121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "title",
+        "uid" : "2098d41195a87db5",
+        "parentUid" : "cdf0d23c0b614a4674c641038b258f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924669302,
+          "stop" : 1614924669415,
+          "duration" : 113
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      } ],
+      "uid" : "cdf0d23c0b614a4674c641038b258f85"
+    } ],
+    "uid" : "29ae25de2b22ec7ac71077264a732e77"
+  } ]
+}
