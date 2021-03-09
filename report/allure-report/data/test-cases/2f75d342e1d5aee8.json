@@ -1,0 +1,113 @@
+{
+  "uid" : "2f75d342e1d5aee8",
+  "name" : "allure报告标题",
+  "fullName" : "test_case.test_cases.TestCase#test_collection[http://39.98.138.157:5000/api/addcart-{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data",
+  "historyId" : "440714ad242cba9eb6c205525fb3f820",
+  "time" : {
+    "start" : 1614943482059,
+    "stop" : 1614943482180,
+    "duration" : 121
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 断言失败\nassert 300 == 200",
+  "statusTrace" : "self = <test_case.test_cases.TestCase object at 0x000001D9C848A148>\nurl = 'http://39.98.138.157:5000/api/addcart'\nbody = '{\"userid\":17890,\"openid\":\"UEHUXUXU78272SDSassDD\",\"productid\":8888}'\nheader = '{\"token\": \"23657DGYUSGD126731638712GE18271H\",\"content-type\": \"application/json\"}'\nmethod = 'post', method_type = 'json', expect_value = 300\njsonpath_value = [200], dependency = 'cartinfo'\n\n    @allure.title(\"allure报告标题\")\n    @pytest.mark.parametrize(\"url, body, header, method, method_type,expect_value, jsonpath_value, dependency\", contents)\n    def test_collection(self, url, body, header, method, method_type,expect_value, jsonpath_value, dependency):\n        comon=HttpClien()\n        body = body.replace('\\r', '').replace('\\n', '').replace('\\t', '') if body is not None else \"\"\n        body = Convert().convert(body) if body.find(\"$\") >= 0 else body\n    \n    \n        header = Convert().convert(header) if (header is not None and header.find(\"$\") >= 0) else header\n        header = \"\" if header is None else header\n        res=comon.request(method,url,method_type,body,header)\n        #把放回数据存入字典depend相应key中\n        if len(dependency)>0 and dependency.find(\"/\")<0:\n            depend[dependency] = res.content\n        res = res.json()\n        Logger().log().debug(\"响应结果：\", res)\n        jsonpath_value = jsonpath.jsonpath(res,jsonpath_value)\n>       assert expect_value == jsonpath_value[0],\"断言失败\"\nE       AssertionError: 断言失败\nE       assert 300 == 200\n\n..\\test_case\\test_cases.py:39: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1614943481248,
+      "stop" : 1614943481320,
+      "duration" : 72
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 断言失败\nassert 300 == 200",
+    "statusTrace" : "self = <test_case.test_cases.TestCase object at 0x000001D9C848A148>\nurl = 'http://39.98.138.157:5000/api/addcart'\nbody = '{\"userid\":17890,\"openid\":\"UEHUXUXU78272SDSassDD\",\"productid\":8888}'\nheader = '{\"token\": \"23657DGYUSGD126731638712GE18271H\",\"content-type\": \"application/json\"}'\nmethod = 'post', method_type = 'json', expect_value = 300\njsonpath_value = [200], dependency = 'cartinfo'\n\n    @allure.title(\"allure报告标题\")\n    @pytest.mark.parametrize(\"url, body, header, method, method_type,expect_value, jsonpath_value, dependency\", contents)\n    def test_collection(self, url, body, header, method, method_type,expect_value, jsonpath_value, dependency):\n        comon=HttpClien()\n        body = body.replace('\\r', '').replace('\\n', '').replace('\\t', '') if body is not None else \"\"\n        body = Convert().convert(body) if body.find(\"$\") >= 0 else body\n    \n    \n        header = Convert().convert(header) if (header is not None and header.find(\"$\") >= 0) else header\n        header = \"\" if header is None else header\n        res=comon.request(method,url,method_type,body,header)\n        #把放回数据存入字典depend相应key中\n        if len(dependency)>0 and dependency.find(\"/\")<0:\n            depend[dependency] = res.content\n        res = res.json()\n        Logger().log().debug(\"响应结果：\", res)\n        jsonpath_value = jsonpath.jsonpath(res,jsonpath_value)\n>       assert expect_value == jsonpath_value[0],\"断言失败\"\nE       AssertionError: 断言失败\nE       assert 300 == 200\n\n..\\test_case\\test_cases.py:39: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "af0e7f242d819871",
+      "name" : "log",
+      "source" : "af0e7f242d819871.txt",
+      "type" : "text/plain",
+      "size" : 48
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_cases"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-JHEF7VRV"
+  }, {
+    "name" : "thread",
+    "value" : "17680-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_cases"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "body",
+    "value" : "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'"
+  }, {
+    "name" : "dependency",
+    "value" : "'cartinfo'"
+  }, {
+    "name" : "expect_value",
+    "value" : "300"
+  }, {
+    "name" : "header",
+    "value" : "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'"
+  }, {
+    "name" : "jsonpath_value",
+    "value" : "'$.httpstatus'"
+  }, {
+    "name" : "method",
+    "value" : "'post'"
+  }, {
+    "name" : "method_type",
+    "value" : "'json'"
+  }, {
+    "name" : "url",
+    "value" : "'http://39.98.138.157:5000/api/addcart'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2f75d342e1d5aee8.json",
+  "parameterValues" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+}

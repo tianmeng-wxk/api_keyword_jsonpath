@@ -1,0 +1,204 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "test_case.test_cases",
+    "children" : [ {
+      "name" : "title",
+      "uid" : "34b220734a7bc9a2",
+      "parentUid" : "eb9a0848ade0a74eb99a6b4b7d6baf8f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614929402793,
+        "stop" : 1614929402916,
+        "duration" : 123
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+    }, {
+      "name" : "title",
+      "uid" : "2aa55bbc52e598d9",
+      "parentUid" : "eb9a0848ade0a74eb99a6b4b7d6baf8f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614929415708,
+        "stop" : 1614929415826,
+        "duration" : 118
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+    }, {
+      "name" : "title",
+      "uid" : "f54465ccdc665c70",
+      "parentUid" : "eb9a0848ade0a74eb99a6b4b7d6baf8f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614929419204,
+        "stop" : 1614929419348,
+        "duration" : 144
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+    }, {
+      "name" : "title",
+      "uid" : "1d37f59583b166bc",
+      "parentUid" : "eb9a0848ade0a74eb99a6b4b7d6baf8f",
+      "status" : "failed",
+      "time" : {
+        "start" : 1614929419711,
+        "stop" : 1614929419855,
+        "duration" : 144
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+    }, {
+      "name" : "title",
+      "uid" : "18d88ea4e114b1ff",
+      "parentUid" : "eb9a0848ade0a74eb99a6b4b7d6baf8f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614929420246,
+        "stop" : 1614929420501,
+        "duration" : 255
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+    }, {
+      "name" : "title",
+      "uid" : "36c78becde796a6b",
+      "parentUid" : "eb9a0848ade0a74eb99a6b4b7d6baf8f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614929420852,
+        "stop" : 1614929421025,
+        "duration" : 173
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+    }, {
+      "name" : "title",
+      "uid" : "cf9b97440be0715",
+      "parentUid" : "eb9a0848ade0a74eb99a6b4b7d6baf8f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614929421390,
+        "stop" : 1614929421537,
+        "duration" : 147
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+    }, {
+      "name" : "title",
+      "uid" : "122b8a9f674725e7",
+      "parentUid" : "eb9a0848ade0a74eb99a6b4b7d6baf8f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614929421908,
+        "stop" : 1614929422029,
+        "duration" : 121
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+    }, {
+      "name" : "title",
+      "uid" : "7368afa4ceeed8d0",
+      "parentUid" : "eb9a0848ade0a74eb99a6b4b7d6baf8f",
+      "status" : "failed",
+      "time" : {
+        "start" : 1614929422399,
+        "stop" : 1614929422621,
+        "duration" : 222
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+    }, {
+      "name" : "title",
+      "uid" : "843f8ffeb648b9ed",
+      "parentUid" : "eb9a0848ade0a74eb99a6b4b7d6baf8f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614929422961,
+        "stop" : 1614929423079,
+        "duration" : 118
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+    }, {
+      "name" : "title",
+      "uid" : "dedb0460a896e3d3",
+      "parentUid" : "eb9a0848ade0a74eb99a6b4b7d6baf8f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614975935173,
+        "stop" : 1614975935423,
+        "duration" : 250
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+    }, {
+      "name" : "title",
+      "uid" : "5196220d1ec0be96",
+      "parentUid" : "eb9a0848ade0a74eb99a6b4b7d6baf8f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614975935826,
+        "stop" : 1614975936045,
+        "duration" : 219
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+    }, {
+      "name" : "title",
+      "uid" : "fd70747034cf5936",
+      "parentUid" : "eb9a0848ade0a74eb99a6b4b7d6baf8f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614975936451,
+        "stop" : 1614975936656,
+        "duration" : 205
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+    }, {
+      "name" : "title",
+      "uid" : "ade99ef10f7801f3",
+      "parentUid" : "eb9a0848ade0a74eb99a6b4b7d6baf8f",
+      "status" : "failed",
+      "time" : {
+        "start" : 1614975937072,
+        "stop" : 1614975937269,
+        "duration" : 197
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+    }, {
+      "name" : "title",
+      "uid" : "e0299df0f0621437",
+      "parentUid" : "eb9a0848ade0a74eb99a6b4b7d6baf8f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614975939045,
+        "stop" : 1614975939327,
+        "duration" : 282
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+    } ],
+    "uid" : "test_case.test_cases"
+  } ]
+}

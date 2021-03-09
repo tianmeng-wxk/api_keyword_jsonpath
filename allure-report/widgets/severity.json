@@ -1,0 +1,151 @@
+[ {
+  "uid" : "a9436b9db0e08053",
+  "name" : "allure报告标题",
+  "time" : {
+    "start" : 1614943633327,
+    "stop" : 1614943633451,
+    "duration" : 124
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bbfa2e09babe4555",
+  "name" : "title",
+  "time" : {
+    "start" : 1614929420852,
+    "stop" : 1614929421025,
+    "duration" : 173
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a321282772ba13cc",
+  "name" : "title",
+  "time" : {
+    "start" : 1614929419204,
+    "stop" : 1614929419348,
+    "duration" : 144
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "42b5739075108e81",
+  "name" : "allure报告标题",
+  "time" : {
+    "start" : 1614943646333,
+    "stop" : 1614943646445,
+    "duration" : 112
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b902147c5866b986",
+  "name" : "title",
+  "time" : {
+    "start" : 1614929420246,
+    "stop" : 1614929420501,
+    "duration" : 255
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "18cbfcc77e644d13",
+  "name" : "title",
+  "time" : {
+    "start" : 1614929421390,
+    "stop" : 1614929421537,
+    "duration" : 147
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f64415f1acf9662",
+  "name" : "title",
+  "time" : {
+    "start" : 1614929419711,
+    "stop" : 1614929419855,
+    "duration" : 144
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "91713eaf8ccb72fd",
+  "name" : "title",
+  "time" : {
+    "start" : 1614929402793,
+    "stop" : 1614929402916,
+    "duration" : 123
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "90bfae3231d16484",
+  "name" : "allure报告标题",
+  "time" : {
+    "start" : 1614943646040,
+    "stop" : 1614943646154,
+    "duration" : 114
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "1e65001ecad821fb",
+  "name" : "title",
+  "time" : {
+    "start" : 1614929415708,
+    "stop" : 1614929415826,
+    "duration" : 118
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "70a7e5bc1b1ebf83",
+  "name" : "title",
+  "time" : {
+    "start" : 1614929422961,
+    "stop" : 1614929423079,
+    "duration" : 118
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "69aba91fa5250169",
+  "name" : "title",
+  "time" : {
+    "start" : 1614929422399,
+    "stop" : 1614929422621,
+    "duration" : 222
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "4ff4c207147eb02e",
+  "name" : "title",
+  "time" : {
+    "start" : 1614929421908,
+    "stop" : 1614929422029,
+    "duration" : 121
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "71b687fd94be6a4b",
+  "name" : "allure报告标题",
+  "time" : {
+    "start" : 1614943645793,
+    "stop" : 1614943645913,
+    "duration" : 120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a95625d4f63e4de0",
+  "name" : "allure报告标题",
+  "time" : {
+    "start" : 1614943645535,
+    "stop" : 1614943645665,
+    "duration" : 130
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

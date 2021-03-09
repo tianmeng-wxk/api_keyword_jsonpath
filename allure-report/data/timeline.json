@@ -1,0 +1,1597 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "LAPTOP-JHEF7VRV",
+    "children" : [ {
+      "name" : "8540-MainThread",
+      "children" : [ {
+        "name" : "title",
+        "uid" : "18cbfcc77e644d13",
+        "parentUid" : "9ba3f0ec8a2d49208c0bd1e7b53762a8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614929421390,
+          "stop" : 1614929421537,
+          "duration" : 147
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "4ff4c207147eb02e",
+        "parentUid" : "9ba3f0ec8a2d49208c0bd1e7b53762a8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614929421908,
+          "stop" : 1614929422029,
+          "duration" : 121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "69aba91fa5250169",
+        "parentUid" : "9ba3f0ec8a2d49208c0bd1e7b53762a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614929422399,
+          "stop" : 1614929422621,
+          "duration" : 222
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "title",
+        "uid" : "bbfa2e09babe4555",
+        "parentUid" : "9ba3f0ec8a2d49208c0bd1e7b53762a8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614929420852,
+          "stop" : 1614929421025,
+          "duration" : 173
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "title",
+        "uid" : "1f64415f1acf9662",
+        "parentUid" : "9ba3f0ec8a2d49208c0bd1e7b53762a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614929419711,
+          "stop" : 1614929419855,
+          "duration" : 144
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "title",
+        "uid" : "70a7e5bc1b1ebf83",
+        "parentUid" : "9ba3f0ec8a2d49208c0bd1e7b53762a8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614929422961,
+          "stop" : 1614929423079,
+          "duration" : 118
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "title",
+        "uid" : "91713eaf8ccb72fd",
+        "parentUid" : "9ba3f0ec8a2d49208c0bd1e7b53762a8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614929402793,
+          "stop" : 1614929402916,
+          "duration" : 123
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "title",
+        "uid" : "1e65001ecad821fb",
+        "parentUid" : "9ba3f0ec8a2d49208c0bd1e7b53762a8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614929415708,
+          "stop" : 1614929415826,
+          "duration" : 118
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "a321282772ba13cc",
+        "parentUid" : "9ba3f0ec8a2d49208c0bd1e7b53762a8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614929419204,
+          "stop" : 1614929419348,
+          "duration" : 144
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "b902147c5866b986",
+        "parentUid" : "9ba3f0ec8a2d49208c0bd1e7b53762a8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614929420246,
+          "stop" : 1614929420501,
+          "duration" : 255
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      } ],
+      "uid" : "9ba3f0ec8a2d49208c0bd1e7b53762a8"
+    }, {
+      "name" : "13948-MainThread",
+      "children" : [ {
+        "name" : "allure报告标题",
+        "uid" : "488b15722feb9a3e",
+        "parentUid" : "6ca01f128aa1689cc430b9172a7aabf0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943598417,
+          "stop" : 1614943598546,
+          "duration" : 129
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "1686dfd757f90102",
+        "parentUid" : "6ca01f128aa1689cc430b9172a7aabf0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614943598122,
+          "stop" : 1614943598232,
+          "duration" : 110
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "59aee4e2de2dc6d2",
+        "parentUid" : "6ca01f128aa1689cc430b9172a7aabf0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943597643,
+          "stop" : 1614943597753,
+          "duration" : 110
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "e57d370c2686b935",
+        "parentUid" : "6ca01f128aa1689cc430b9172a7aabf0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943597383,
+          "stop" : 1614943597524,
+          "duration" : 141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "56291751e405d2ae",
+        "parentUid" : "6ca01f128aa1689cc430b9172a7aabf0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943597881,
+          "stop" : 1614943598004,
+          "duration" : 123
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      } ],
+      "uid" : "6ca01f128aa1689cc430b9172a7aabf0"
+    }, {
+      "name" : "10956-MainThread",
+      "children" : [ {
+        "name" : "title",
+        "uid" : "f117ace2fcfe5c23",
+        "parentUid" : "0e1a8f2b52c3603137a454f3f56be40d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614938185258,
+          "stop" : 1614938185384,
+          "duration" : 126
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "8003f859aa144efb",
+        "parentUid" : "0e1a8f2b52c3603137a454f3f56be40d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614938184699,
+          "stop" : 1614938184845,
+          "duration" : 146
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "title",
+        "uid" : "2cb8dff8191925e9",
+        "parentUid" : "0e1a8f2b52c3603137a454f3f56be40d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614938188660,
+          "stop" : 1614938188777,
+          "duration" : 117
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "title",
+        "uid" : "a52d29cf6651ea50",
+        "parentUid" : "0e1a8f2b52c3603137a454f3f56be40d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614938184970,
+          "stop" : 1614938185136,
+          "duration" : 166
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      } ],
+      "uid" : "0e1a8f2b52c3603137a454f3f56be40d"
+    }, {
+      "name" : "13132-MainThread",
+      "children" : [ {
+        "name" : "title",
+        "uid" : "6111289fd025259e",
+        "parentUid" : "1a088993b027a53b13f647896f24402c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614941517988,
+          "stop" : 1614941518098,
+          "duration" : 110
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "title",
+        "uid" : "cc78a16b7188245f",
+        "parentUid" : "1a088993b027a53b13f647896f24402c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614941519593,
+          "stop" : 1614941519715,
+          "duration" : 122
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "title",
+        "uid" : "43ddb24c7151a804",
+        "parentUid" : "1a088993b027a53b13f647896f24402c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614941518224,
+          "stop" : 1614941518363,
+          "duration" : 139
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "a0d640053e53f27f",
+        "parentUid" : "1a088993b027a53b13f647896f24402c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614941518486,
+          "stop" : 1614941518604,
+          "duration" : 118
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      } ],
+      "uid" : "1a088993b027a53b13f647896f24402c"
+    }, {
+      "name" : "18372-MainThread",
+      "children" : [ {
+        "name" : "allure报告标题",
+        "uid" : "f8eefefc8611d968",
+        "parentUid" : "7435ce27a098c79da589c67e9e2b3858",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943154668,
+          "stop" : 1614943154885,
+          "duration" : 217
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "7c1ac56998bdde07",
+        "parentUid" : "7435ce27a098c79da589c67e9e2b3858",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943161171,
+          "stop" : 1614943161304,
+          "duration" : 133
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "d9d1aee228415ffb",
+        "parentUid" : "7435ce27a098c79da589c67e9e2b3858",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614943161683,
+          "stop" : 1614943161808,
+          "duration" : 125
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "925d8b0c45d3be9",
+        "parentUid" : "7435ce27a098c79da589c67e9e2b3858",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943161986,
+          "stop" : 1614943162115,
+          "duration" : 129
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "686a264254c1a7e5",
+        "parentUid" : "7435ce27a098c79da589c67e9e2b3858",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943161432,
+          "stop" : 1614943161562,
+          "duration" : 130
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      } ],
+      "uid" : "7435ce27a098c79da589c67e9e2b3858"
+    }, {
+      "name" : "5104-MainThread",
+      "children" : [ {
+        "name" : "allure报告标题",
+        "uid" : "3e7d3e19424cb144",
+        "parentUid" : "1ffd0184f88d7e6c467ec207e93ffa6b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614943262335,
+          "stop" : 1614943262460,
+          "duration" : 125
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "266624d767ef9261",
+        "parentUid" : "1ffd0184f88d7e6c467ec207e93ffa6b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943262639,
+          "stop" : 1614943262766,
+          "duration" : 127
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "c046037aab34a13d",
+        "parentUid" : "1ffd0184f88d7e6c467ec207e93ffa6b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943261636,
+          "stop" : 1614943261755,
+          "duration" : 119
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "44df326ba7966a26",
+        "parentUid" : "1ffd0184f88d7e6c467ec207e93ffa6b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943261871,
+          "stop" : 1614943262004,
+          "duration" : 133
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "51066661ac5e3b2b",
+        "parentUid" : "1ffd0184f88d7e6c467ec207e93ffa6b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943262116,
+          "stop" : 1614943262221,
+          "duration" : 105
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      } ],
+      "uid" : "1ffd0184f88d7e6c467ec207e93ffa6b"
+    }, {
+      "name" : "17680-MainThread",
+      "children" : [ {
+        "name" : "allure报告标题",
+        "uid" : "e75bd90f2a328b9f",
+        "parentUid" : "533535e7c05ec18c65e48b972d2c8c7d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943481559,
+          "stop" : 1614943481671,
+          "duration" : 112
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "fb367e3eb1e7b5c4",
+        "parentUid" : "533535e7c05ec18c65e48b972d2c8c7d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943481321,
+          "stop" : 1614943481434,
+          "duration" : 113
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "2b78afa6f5b8afc9",
+        "parentUid" : "533535e7c05ec18c65e48b972d2c8c7d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943481799,
+          "stop" : 1614943481934,
+          "duration" : 135
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "cdf76d78fa4f7ef6",
+        "parentUid" : "533535e7c05ec18c65e48b972d2c8c7d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943482358,
+          "stop" : 1614943482472,
+          "duration" : 114
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "3c38df948695d97b",
+        "parentUid" : "533535e7c05ec18c65e48b972d2c8c7d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614943482059,
+          "stop" : 1614943482180,
+          "duration" : 121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      } ],
+      "uid" : "533535e7c05ec18c65e48b972d2c8c7d"
+    }, {
+      "name" : "11968-MainThread",
+      "children" : [ {
+        "name" : "title",
+        "uid" : "e77191e50067bc00",
+        "parentUid" : "c69da64634804834264c2b02c50e0364",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614940883563,
+          "stop" : 1614940883672,
+          "duration" : 109
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "title",
+        "uid" : "5dfeafbb6fe78cbd",
+        "parentUid" : "c69da64634804834264c2b02c50e0364",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614940883843,
+          "stop" : 1614940883961,
+          "duration" : 118
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "title",
+        "uid" : "41f117ed5b1449b0",
+        "parentUid" : "c69da64634804834264c2b02c50e0364",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614940883332,
+          "stop" : 1614940883445,
+          "duration" : 113
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "a0902b33b67048ac",
+        "parentUid" : "c69da64634804834264c2b02c50e0364",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614940876702,
+          "stop" : 1614940876825,
+          "duration" : 123
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      } ],
+      "uid" : "c69da64634804834264c2b02c50e0364"
+    }, {
+      "name" : "12348-MainThread",
+      "children" : [ {
+        "name" : "title",
+        "uid" : "9574bd1e0e91eea",
+        "parentUid" : "105b850fb5239ac0e9219a1a20420547",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614937731683,
+          "stop" : 1614937731822,
+          "duration" : 139
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "title",
+        "uid" : "e04e4c7b774bb091",
+        "parentUid" : "105b850fb5239ac0e9219a1a20420547",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614937732723,
+          "stop" : 1614937732837,
+          "duration" : 114
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "title",
+        "uid" : "3cce30f24c7eb30a",
+        "parentUid" : "105b850fb5239ac0e9219a1a20420547",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614937732173,
+          "stop" : 1614937732310,
+          "duration" : 137
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "edecd9d159331ee8",
+        "parentUid" : "105b850fb5239ac0e9219a1a20420547",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614937732434,
+          "stop" : 1614937732554,
+          "duration" : 120
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "title",
+        "uid" : "a4ee37dd4131bf7c",
+        "parentUid" : "105b850fb5239ac0e9219a1a20420547",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614937731944,
+          "stop" : 1614937732055,
+          "duration" : 111
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      } ],
+      "uid" : "105b850fb5239ac0e9219a1a20420547"
+    }, {
+      "name" : "11364-MainThread",
+      "children" : [ {
+        "name" : "title",
+        "uid" : "891dbebdeab5fe8a",
+        "parentUid" : "b6e86a8ef6adba4156b2b848ef2feefd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614936381176,
+          "stop" : 1614936381296,
+          "duration" : 120
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "dc4009fa47bcf5a5",
+        "parentUid" : "b6e86a8ef6adba4156b2b848ef2feefd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614936390353,
+          "stop" : 1614936390471,
+          "duration" : 118
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "title",
+        "uid" : "987af7eb4cc7558f",
+        "parentUid" : "b6e86a8ef6adba4156b2b848ef2feefd",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614936382282,
+          "stop" : 1614936382513,
+          "duration" : 231
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "title",
+        "uid" : "a782209dc0a4c2ff",
+        "parentUid" : "b6e86a8ef6adba4156b2b848ef2feefd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614936380905,
+          "stop" : 1614936381058,
+          "duration" : 153
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "title",
+        "uid" : "789dad62115239f2",
+        "parentUid" : "b6e86a8ef6adba4156b2b848ef2feefd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614936381969,
+          "stop" : 1614936382114,
+          "duration" : 145
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      } ],
+      "uid" : "b6e86a8ef6adba4156b2b848ef2feefd"
+    }, {
+      "name" : "9928-MainThread",
+      "children" : [ {
+        "name" : "title",
+        "uid" : "dfeec3276ab21827",
+        "parentUid" : "0b140d46f41bc6f0d64789078146c73e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614937880570,
+          "stop" : 1614937880694,
+          "duration" : 124
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "c3fa078f4d1694f1",
+        "parentUid" : "0b140d46f41bc6f0d64789078146c73e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614937880325,
+          "stop" : 1614937880455,
+          "duration" : 130
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "131712037d6dfe2c",
+        "parentUid" : "0b140d46f41bc6f0d64789078146c73e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614937881127,
+          "stop" : 1614937881243,
+          "duration" : 116
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "title",
+        "uid" : "3423b51bf98c1cd6",
+        "parentUid" : "0b140d46f41bc6f0d64789078146c73e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614937880812,
+          "stop" : 1614937880961,
+          "duration" : 149
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "title",
+        "uid" : "d87aa6fa67d278c3",
+        "parentUid" : "0b140d46f41bc6f0d64789078146c73e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614937873882,
+          "stop" : 1614937874051,
+          "duration" : 169
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      } ],
+      "uid" : "0b140d46f41bc6f0d64789078146c73e"
+    }, {
+      "name" : "9352-MainThread",
+      "children" : [ {
+        "name" : "allure报告标题",
+        "uid" : "5cadd088d4e9cc82",
+        "parentUid" : "b7713e381e6d1b6a70bf26692bd83965",
+        "status" : "broken",
+        "time" : {
+          "start" : 1614943302179,
+          "stop" : 1614943302179,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "170f1d58176f7220",
+        "parentUid" : "b7713e381e6d1b6a70bf26692bd83965",
+        "status" : "broken",
+        "time" : {
+          "start" : 1614943302018,
+          "stop" : 1614943302018,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "e8c8fc490d426faf",
+        "parentUid" : "b7713e381e6d1b6a70bf26692bd83965",
+        "status" : "broken",
+        "time" : {
+          "start" : 1614943302403,
+          "stop" : 1614943302404,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "f0149ac0802ce9f",
+        "parentUid" : "b7713e381e6d1b6a70bf26692bd83965",
+        "status" : "broken",
+        "time" : {
+          "start" : 1614943302290,
+          "stop" : 1614943302290,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "14cba087a4f4a66a",
+        "parentUid" : "b7713e381e6d1b6a70bf26692bd83965",
+        "status" : "broken",
+        "time" : {
+          "start" : 1614943302517,
+          "stop" : 1614943302517,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      } ],
+      "uid" : "b7713e381e6d1b6a70bf26692bd83965"
+    }, {
+      "name" : "17136-MainThread",
+      "children" : [ {
+        "name" : "title",
+        "uid" : "cb36ce4ae878b7e3",
+        "parentUid" : "93fbc40537a3a4517c68c8ce4dfce0f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614938967427,
+          "stop" : 1614938967541,
+          "duration" : 114
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "e2059d6f382ed69c",
+        "parentUid" : "93fbc40537a3a4517c68c8ce4dfce0f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614938968201,
+          "stop" : 1614938968322,
+          "duration" : 121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "title",
+        "uid" : "dc8d2f24c25aa5b4",
+        "parentUid" : "93fbc40537a3a4517c68c8ce4dfce0f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614938967660,
+          "stop" : 1614938967784,
+          "duration" : 124
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "ca69d78b186a78d5",
+        "parentUid" : "93fbc40537a3a4517c68c8ce4dfce0f6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614938967905,
+          "stop" : 1614938968021,
+          "duration" : 116
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      } ],
+      "uid" : "93fbc40537a3a4517c68c8ce4dfce0f6"
+    }, {
+      "name" : "3664-MainThread",
+      "children" : [ {
+        "name" : "title",
+        "uid" : "5b8cfb8c3582ac48",
+        "parentUid" : "a43e19c2ac55b6ebd8676bc53e2513df",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614936791112,
+          "stop" : 1614936791214,
+          "duration" : 102
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "title",
+        "uid" : "4279f158299a60ba",
+        "parentUid" : "a43e19c2ac55b6ebd8676bc53e2513df",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614936791337,
+          "stop" : 1614936791449,
+          "duration" : 112
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "f240de9f4bb1fd40",
+        "parentUid" : "a43e19c2ac55b6ebd8676bc53e2513df",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614936792109,
+          "stop" : 1614936792231,
+          "duration" : 122
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "title",
+        "uid" : "705308304db19f0d",
+        "parentUid" : "a43e19c2ac55b6ebd8676bc53e2513df",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614936791569,
+          "stop" : 1614936791698,
+          "duration" : 129
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "54ec7ccb4b059b12",
+        "parentUid" : "a43e19c2ac55b6ebd8676bc53e2513df",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614936791822,
+          "stop" : 1614936791940,
+          "duration" : 118
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      } ],
+      "uid" : "a43e19c2ac55b6ebd8676bc53e2513df"
+    }, {
+      "name" : "12832-MainThread",
+      "children" : [ {
+        "name" : "title",
+        "uid" : "f538229b424d857c",
+        "parentUid" : "ff2373e77ff79b4fef85865f58c53ec8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924494690,
+          "stop" : 1614924494807,
+          "duration" : 117
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "ae6ebb9c0aef3491",
+        "parentUid" : "ff2373e77ff79b4fef85865f58c53ec8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614924495708,
+          "stop" : 1614924495806,
+          "duration" : 98
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "title",
+        "uid" : "b1e8a0c697e6d093",
+        "parentUid" : "ff2373e77ff79b4fef85865f58c53ec8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924496271,
+          "stop" : 1614924496379,
+          "duration" : 108
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "title",
+        "uid" : "83fbf60579718a64",
+        "parentUid" : "ff2373e77ff79b4fef85865f58c53ec8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614924491702,
+          "stop" : 1614924491823,
+          "duration" : 121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "title",
+        "uid" : "6d4e5714c87962e4",
+        "parentUid" : "ff2373e77ff79b4fef85865f58c53ec8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924490706,
+          "stop" : 1614924490827,
+          "duration" : 121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "cb515b0f9e872fc4",
+        "parentUid" : "ff2373e77ff79b4fef85865f58c53ec8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924495205,
+          "stop" : 1614924495307,
+          "duration" : 102
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "8f393462a975b0ac",
+        "parentUid" : "ff2373e77ff79b4fef85865f58c53ec8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924492217,
+          "stop" : 1614924492328,
+          "duration" : 111
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "title",
+        "uid" : "e12de3e3dd2afa5f",
+        "parentUid" : "ff2373e77ff79b4fef85865f58c53ec8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924491219,
+          "stop" : 1614924491340,
+          "duration" : 121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "3f32ca3accbb6231",
+        "parentUid" : "ff2373e77ff79b4fef85865f58c53ec8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924490245,
+          "stop" : 1614924490348,
+          "duration" : 103
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "title",
+        "uid" : "6e45fc653bf4a74b",
+        "parentUid" : "ff2373e77ff79b4fef85865f58c53ec8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924494177,
+          "stop" : 1614924494289,
+          "duration" : 112
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      } ],
+      "uid" : "ff2373e77ff79b4fef85865f58c53ec8"
+    }, {
+      "name" : "2480-MainThread",
+      "children" : [ {
+        "name" : "title",
+        "uid" : "a06f6d7be10189d3",
+        "parentUid" : "13d532cc6bef9ce0c42d67edbb82a43b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614925685361,
+          "stop" : 1614925685472,
+          "duration" : 111
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "title",
+        "uid" : "6e55037eb95a0280",
+        "parentUid" : "13d532cc6bef9ce0c42d67edbb82a43b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614925683190,
+          "stop" : 1614925683332,
+          "duration" : 142
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "e66277c578a6cdcb",
+        "parentUid" : "13d532cc6bef9ce0c42d67edbb82a43b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614925687424,
+          "stop" : 1614925687554,
+          "duration" : 130
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "title",
+        "uid" : "5e01158e5ffd0af8",
+        "parentUid" : "13d532cc6bef9ce0c42d67edbb82a43b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614925686949,
+          "stop" : 1614925687054,
+          "duration" : 105
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "title",
+        "uid" : "cbe8a8b910274ab7",
+        "parentUid" : "13d532cc6bef9ce0c42d67edbb82a43b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614925682672,
+          "stop" : 1614925682800,
+          "duration" : 128
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "title",
+        "uid" : "35728033790726d2",
+        "parentUid" : "13d532cc6bef9ce0c42d67edbb82a43b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614925684789,
+          "stop" : 1614925684957,
+          "duration" : 168
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "title",
+        "uid" : "e63dd4f15859aef6",
+        "parentUid" : "13d532cc6bef9ce0c42d67edbb82a43b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614925686411,
+          "stop" : 1614925686546,
+          "duration" : 135
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "adbc09363bc0083f",
+        "parentUid" : "13d532cc6bef9ce0c42d67edbb82a43b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614925685873,
+          "stop" : 1614925686009,
+          "duration" : 136
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "c9dd5dbc6ccfde9b",
+        "parentUid" : "13d532cc6bef9ce0c42d67edbb82a43b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614925684253,
+          "stop" : 1614925684370,
+          "duration" : 117
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "title",
+        "uid" : "c095b83c69653849",
+        "parentUid" : "13d532cc6bef9ce0c42d67edbb82a43b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614925683735,
+          "stop" : 1614925683848,
+          "duration" : 113
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      } ],
+      "uid" : "13d532cc6bef9ce0c42d67edbb82a43b"
+    }, {
+      "name" : "11980-MainThread",
+      "children" : [ {
+        "name" : "title",
+        "uid" : "8a62a0089e937719",
+        "parentUid" : "cdf0d23c0b614a4674c641038b258f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924668788,
+          "stop" : 1614924668904,
+          "duration" : 116
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "title",
+        "uid" : "75ad251327507f3",
+        "parentUid" : "cdf0d23c0b614a4674c641038b258f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924666994,
+          "stop" : 1614924667108,
+          "duration" : 114
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "1cc7d1368e30d2ba",
+        "parentUid" : "cdf0d23c0b614a4674c641038b258f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924663209,
+          "stop" : 1614924663330,
+          "duration" : 121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "1ed711063df5602d",
+        "parentUid" : "cdf0d23c0b614a4674c641038b258f85",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614924670310,
+          "stop" : 1614924670420,
+          "duration" : 110
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "title",
+        "uid" : "f213103c1026be5c",
+        "parentUid" : "cdf0d23c0b614a4674c641038b258f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924669302,
+          "stop" : 1614924669415,
+          "duration" : 113
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "ce64596dce6fa5c8",
+        "parentUid" : "cdf0d23c0b614a4674c641038b258f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924662746,
+          "stop" : 1614924662858,
+          "duration" : 112
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "title",
+        "uid" : "e54f5b4e8793840f",
+        "parentUid" : "cdf0d23c0b614a4674c641038b258f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924669800,
+          "stop" : 1614924669918,
+          "duration" : 118
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "3de0030c206f9c4e",
+        "parentUid" : "cdf0d23c0b614a4674c641038b258f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924668286,
+          "stop" : 1614924668396,
+          "duration" : 110
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "title",
+        "uid" : "b30c838bfd2a8982",
+        "parentUid" : "cdf0d23c0b614a4674c641038b258f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614924670781,
+          "stop" : 1614924670928,
+          "duration" : 147
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "title",
+        "uid" : "78fa4a4835ea6a1b",
+        "parentUid" : "cdf0d23c0b614a4674c641038b258f85",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614924667749,
+          "stop" : 1614924667870,
+          "duration" : 121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      } ],
+      "uid" : "cdf0d23c0b614a4674c641038b258f85"
+    }, {
+      "name" : "14940-MainThread",
+      "children" : [ {
+        "name" : "allure报告标题",
+        "uid" : "71b687fd94be6a4b",
+        "parentUid" : "33c7c1e0db9e21684bce4beedf2a41cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943645793,
+          "stop" : 1614943645913,
+          "duration" : 120
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "42b5739075108e81",
+        "parentUid" : "33c7c1e0db9e21684bce4beedf2a41cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943646333,
+          "stop" : 1614943646445,
+          "duration" : 112
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "a95625d4f63e4de0",
+        "parentUid" : "33c7c1e0db9e21684bce4beedf2a41cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943645535,
+          "stop" : 1614943645665,
+          "duration" : 130
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "a9436b9db0e08053",
+        "parentUid" : "33c7c1e0db9e21684bce4beedf2a41cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943633327,
+          "stop" : 1614943633451,
+          "duration" : 124
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "90bfae3231d16484",
+        "parentUid" : "33c7c1e0db9e21684bce4beedf2a41cc",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614943646040,
+          "stop" : 1614943646154,
+          "duration" : 114
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      } ],
+      "uid" : "33c7c1e0db9e21684bce4beedf2a41cc"
+    }, {
+      "name" : "18316-MainThread",
+      "children" : [ {
+        "name" : "title",
+        "uid" : "683f0790302fe22",
+        "parentUid" : "ee42ac99ad984321ef42da4ddab7ee2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614939202101,
+          "stop" : 1614939202268,
+          "duration" : 167
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "title",
+        "uid" : "b6fb5c8c6e6cf545",
+        "parentUid" : "ee42ac99ad984321ef42da4ddab7ee2e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614939202895,
+          "stop" : 1614939203009,
+          "duration" : 114
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "title",
+        "uid" : "c157c21249f94e7f",
+        "parentUid" : "ee42ac99ad984321ef42da4ddab7ee2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614939202397,
+          "stop" : 1614939202521,
+          "duration" : 124
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "4ecc202d1d685781",
+        "parentUid" : "ee42ac99ad984321ef42da4ddab7ee2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614939202651,
+          "stop" : 1614939202762,
+          "duration" : 111
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "title",
+        "uid" : "89457c4bc780785f",
+        "parentUid" : "ee42ac99ad984321ef42da4ddab7ee2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614939203182,
+          "stop" : 1614939203352,
+          "duration" : 170
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      } ],
+      "uid" : "ee42ac99ad984321ef42da4ddab7ee2e"
+    }, {
+      "name" : "17308-MainThread",
+      "children" : [ {
+        "name" : "allure报告标题",
+        "uid" : "1558926fec8e4c7e",
+        "parentUid" : "89639a45e6baa6a5fd4752adb4b37303",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943376018,
+          "stop" : 1614943376121,
+          "duration" : 103
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"cartid\":$cartinfo.data[0].cartid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$,\"userid\":$uservar.data[0].userid$}'", "'/'", "200", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/createorder'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "3b25ae1cd846f24c",
+        "parentUid" : "89639a45e6baa6a5fd4752adb4b37303",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943372669,
+          "stop" : 1614943372780,
+          "duration" : 111
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "76ef600c91d54671",
+        "parentUid" : "89639a45e6baa6a5fd4752adb4b37303",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943372903,
+          "stop" : 1614943373034,
+          "duration" : 131
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "'uservar'", "200", "'{\"token\": \"$loginvar.token$\"}'", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "4447c43a7b1f7155",
+        "parentUid" : "89639a45e6baa6a5fd4752adb4b37303",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614943372413,
+          "stop" : 1614943372545,
+          "duration" : 132
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "ffea7e2c0b75f7b7",
+        "parentUid" : "89639a45e6baa6a5fd4752adb4b37303",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614943373159,
+          "stop" : 1614943373278,
+          "duration" : 119
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      } ],
+      "uid" : "89639a45e6baa6a5fd4752adb4b37303"
+    } ],
+    "uid" : "29ae25de2b22ec7ac71077264a732e77"
+  } ]
+}

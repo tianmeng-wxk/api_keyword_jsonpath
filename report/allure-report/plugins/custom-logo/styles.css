@@ -1,0 +1,27 @@
+/*.side-nav__brand {
+  background: url('custom-logo.svg') no-repeat left center !important;
+  margin-left: 10px;
+}*/
+/*以上是原来的内容*/
+/*以下是新加的内容*/
+.side-nav__brand {
+  background: url('tianmeng.png') no-repeat left center !important;
+  margin-left: 0px;
+  height: 40px;
+  background-size: contain !important;
+  padding-left:80px;
+  font-size:20px;
+  
+}
+/*隐藏掉allure名称*/
+.side-nav__brand span{
+    display: none;
+}
+
+.side-nav__brand:after{
+    content: "allure报告";    #这是的内容对应的是我logo后面的内容，在接下来的截图中可以看到，如果不写这个样式，默认的就是allure
+  
+}
+/*.side-nav__brand-text {
+  display: none;
+}*/

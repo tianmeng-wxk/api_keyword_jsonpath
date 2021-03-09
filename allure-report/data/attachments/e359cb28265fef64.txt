@@ -1,0 +1,2 @@
+DEBUG    logger:test_cases.py:37 响应结果：{'data': [{'nikename': '风清扬', 'openid': 'UEHUXUXU78272SDSassDD', 'userbalance': 5678.9, 'userid': 17890, 'username': 'admin', 'userpoints': 4321}], 'httpstatus': 200}
+INFO     logger:test_cases.py:40 ----------------断言结束-----------------

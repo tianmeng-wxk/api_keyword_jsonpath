@@ -1,0 +1,326 @@
+{
+  "uid" : "18cbfcc77e644d13",
+  "name" : "title",
+  "fullName" : "test_case.test_cases.TestCase#test_collection",
+  "historyId" : "e00ae59884f50202232c930c67e10902",
+  "time" : {
+    "start" : 1614929421390,
+    "stop" : 1614929421537,
+    "duration" : 147
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1614929402722,
+      "stop" : 1614929402792,
+      "duration" : 70
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "618e6ad4c84d2554",
+      "name" : "log",
+      "source" : "618e6ad4c84d2554.txt",
+      "type" : "text/plain",
+      "size" : 78
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_cases"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-JHEF7VRV"
+  }, {
+    "name" : "thread",
+    "value" : "8540-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_cases"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "body",
+    "value" : "'?productid=8888'"
+  }, {
+    "name" : "dependency",
+    "value" : "'productvar'"
+  }, {
+    "name" : "expect_value",
+    "value" : "200"
+  }, {
+    "name" : "header",
+    "value" : "None"
+  }, {
+    "name" : "jsonpath_value",
+    "value" : "'$.httpstatus'"
+  }, {
+    "name" : "method",
+    "value" : "'get'"
+  }, {
+    "name" : "method_type",
+    "value" : "'url'"
+  }, {
+    "name" : "url",
+    "value" : "'http://39.98.138.157:5000/api/getproductinfo'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "adbc09363bc0083f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614925685873,
+        "stop" : 1614925686009,
+        "duration" : 136
+      }
+    }, {
+      "uid" : "f213103c1026be5c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614924669302,
+        "stop" : 1614924669415,
+        "duration" : 113
+      }
+    }, {
+      "uid" : "f538229b424d857c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614924494690,
+        "stop" : 1614924494807,
+        "duration" : 117
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 33,
+        "unknown" : 0,
+        "total" : 33
+      },
+      "items" : [ {
+        "uid" : "86b6e71271252284",
+        "reportUrl" : "http://localhost:8080/job/api_keywork_jsonpath/112/allure/#testresult/86b6e71271252284",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614930423189,
+          "stop" : 1614930423324,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "899cc4699dc56ae6",
+        "reportUrl" : "http://localhost:8080/job/api_keywork_jsonpath/111/allure/#testresult/899cc4699dc56ae6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614930423189,
+          "stop" : 1614930423324,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "71bea5bfe783d079",
+        "reportUrl" : "http://localhost:8080/job/api_keywork_jsonpath/110/allure/#testresult/71bea5bfe783d079",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614930423189,
+          "stop" : 1614930423324,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "c1e9048a5420dfd8",
+        "reportUrl" : "http://localhost:8080/job/api_keywork_jsonpath/109/allure/#testresult/c1e9048a5420dfd8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614930423189,
+          "stop" : 1614930423324,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "1df74f9c6ce020a3",
+        "reportUrl" : "http://localhost:8080/job/api_keywork_jsonpath/108/allure/#testresult/1df74f9c6ce020a3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614930423189,
+          "stop" : 1614930423324,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "1aa92a95c6387efc",
+        "reportUrl" : "http://localhost:8080/job/api_keywork_jsonpath/107/allure/#testresult/1aa92a95c6387efc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614930423189,
+          "stop" : 1614930423324,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "1d6b502b2fc94143",
+        "reportUrl" : "http://localhost:8080/job/api_keywork_jsonpath/106/allure/#testresult/1d6b502b2fc94143",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614930423189,
+          "stop" : 1614930423324,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "634980e5c95e27eb",
+        "reportUrl" : "http://localhost:8080/job/api_keywork_jsonpath/105/allure/#testresult/634980e5c95e27eb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614930423189,
+          "stop" : 1614930423324,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "df9d09d0cae8af09",
+        "reportUrl" : "http://localhost:8080/job/api_keywork_jsonpath/104/allure/#testresult/df9d09d0cae8af09",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614930423189,
+          "stop" : 1614930423324,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "7784016eac81ac52",
+        "reportUrl" : "http://localhost:8080/job/api_keywork_jsonpath/103/allure/#testresult/7784016eac81ac52",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614930423189,
+          "stop" : 1614930423324,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "2d8689206d6855ba",
+        "reportUrl" : "http://localhost:8080/job/api_keywork_jsonpath/102/allure/#testresult/2d8689206d6855ba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614930423189,
+          "stop" : 1614930423324,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "4fa9f4f3637f99ad",
+        "reportUrl" : "http://localhost:8080/job/api_keywork_jsonpath/101/allure/#testresult/4fa9f4f3637f99ad",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614930423189,
+          "stop" : 1614930423324,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "28eb32cc10fb35f6",
+        "reportUrl" : "http://localhost:8080/job/api_keywork_jsonpath/100/allure/#testresult/28eb32cc10fb35f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614930423189,
+          "stop" : 1614930423324,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "e21ee992d5bdd896",
+        "reportUrl" : "http://localhost:8080/job/api_keywork_jsonpath/99/allure/#testresult/e21ee992d5bdd896",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614930423189,
+          "stop" : 1614930423324,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "1fee05232e916618",
+        "reportUrl" : "http://localhost:8080/job/api_keywork_jsonpath/98/allure/#testresult/1fee05232e916618",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614930423189,
+          "stop" : 1614930423324,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "2ea8496ff0596049",
+        "reportUrl" : "http://localhost:8080/job/api_keywork_jsonpath/97/allure/#testresult/2ea8496ff0596049",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614930423189,
+          "stop" : 1614930423324,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "165d9dc50df0c4cc",
+        "reportUrl" : "http://localhost:8080/job/api_keywork_jsonpath/96/allure/#testresult/165d9dc50df0c4cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614930423189,
+          "stop" : 1614930423324,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "e552333286908622",
+        "reportUrl" : "http://localhost:8080/job/api_keywork_jsonpath/95/allure/#testresult/e552333286908622",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614930423189,
+          "stop" : 1614930423324,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "46cffa4b7ee2c190",
+        "reportUrl" : "http://localhost:8080/job/api_keywork_jsonpath/94/allure/#testresult/46cffa4b7ee2c190",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614930423189,
+          "stop" : 1614930423324,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "114edba4d50fc777",
+        "reportUrl" : "http://localhost:8080/job/api_keywork_jsonpath/93/allure/#testresult/114edba4d50fc777",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614930423189,
+          "stop" : 1614930423324,
+          "duration" : 135
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "18cbfcc77e644d13.json",
+  "parameterValues" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+}

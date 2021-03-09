@@ -1,0 +1,2 @@
+INFO     logger:test_cases.py:26 开始执行第3条用例
+INFO     logger:test_cases.py:39 响应结果：{'data': [{'nikename': '风清扬', 'openid': 'UEHUXUXU78272SDSassDD', 'userbalance': 5678.9, 'userid': 17890, 'username': 'admin', 'userpoints': 4321}], 'httpstatus': 200}

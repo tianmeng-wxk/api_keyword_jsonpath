@@ -1,0 +1,109 @@
+{
+  "uid" : "43ddb24c7151a804",
+  "name" : "title",
+  "fullName" : "test_case.test_cases.TestCase#test_collection",
+  "historyId" : "236e42b6666bf11934d1c1867f1278a1",
+  "time" : {
+    "start" : 1614941518224,
+    "stop" : 1614941518363,
+    "duration" : 139
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1614941517920,
+      "stop" : 1614941517987,
+      "duration" : 67
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1e3f6c7e5fa12500",
+      "name" : "log",
+      "source" : "1e3f6c7e5fa12500.txt",
+      "type" : "text/plain",
+      "size" : 78
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_cases"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-JHEF7VRV"
+  }, {
+    "name" : "thread",
+    "value" : "13132-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_cases"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "body",
+    "value" : "'?productid=8888'"
+  }, {
+    "name" : "dependency",
+    "value" : "'productvar'"
+  }, {
+    "name" : "expect_value",
+    "value" : "200"
+  }, {
+    "name" : "header",
+    "value" : "None"
+  }, {
+    "name" : "jsonpath_value",
+    "value" : "'$.httpstatus'"
+  }, {
+    "name" : "method",
+    "value" : "'get'"
+  }, {
+    "name" : "method_type",
+    "value" : "'url'"
+  }, {
+    "name" : "url",
+    "value" : "'http://39.98.138.157:5000/api/getproductinfo'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "43ddb24c7151a804.json",
+  "parameterValues" : [ "'?productid=8888'", "'productvar'", "200", "None", "'$.httpstatus'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+}

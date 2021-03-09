@@ -1,0 +1,1 @@
+INFO     logger:test_cases.py:26 开始执行第2条用例

@@ -1,0 +1,2 @@
+INFO     logger:test_cases.py:26 开始执行第4条用例
+INFO     logger:test_cases.py:39 响应结果：{'data': [{'cartid': 45233, 'openid': 'UEHUXUXU78272SDSassDD', 'price': 29.9, 'productid': 8888, 'userid': 17890}], 'httpstatus': 200, 'result': 'success'}

@@ -1,0 +1,2 @@
+DEBUG    logger:test_cases.py:37 响应结果：{'adress': {'city': 'changsha'}, 'httpstatus': 200, 'info': {'age': 18, 'name': 'admin'}, 'msg': 'success', 'token': '23657DGYUSGD126731638712GE18271H'}
+INFO     logger:test_cases.py:40 ----------------断言结束-----------------

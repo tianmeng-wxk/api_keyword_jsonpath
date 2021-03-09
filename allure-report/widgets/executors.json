@@ -1,0 +1,10 @@
+[ {
+  "name" : "Jenkins",
+  "type" : "jenkins",
+  "url" : "http://localhost:8080/",
+  "buildOrder" : 114,
+  "buildName" : "api_keywork_jsonpath #114",
+  "buildUrl" : "http://localhost:8080/job/api_keywork_jsonpath/114/",
+  "reportName" : "AllureReport",
+  "reportUrl" : "http://localhost:8080/job/api_keywork_jsonpath/114/allure"
+} ]

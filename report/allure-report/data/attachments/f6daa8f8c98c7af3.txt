@@ -1,0 +1,2 @@
+DEBUG    logger:test_cases.py:37 响应结果：{'data': [{'openid': 'UEHUXUXU78272SDSassDD', 'orderid': 23441289, 'orderprice': 129.9, 'productid': 8888, 'productnum': 1, 'userid': 17890}], 'httpstatus': 200, 'result': 'success'}
+INFO     logger:test_cases.py:40 ----------------断言结束-----------------

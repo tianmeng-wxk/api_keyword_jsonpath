@@ -1,0 +1,95 @@
+{
+  "uid" : "78d3b7132c840a5e",
+  "name" : "allure报告标题",
+  "fullName" : "test_case.test_cases.TestCase#test_collection",
+  "historyId" : "21736a981103e5e61f68cd3d6cd188ef",
+  "time" : {
+    "start" : 1614943302018,
+    "stop" : 1614943302018,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'TestCase' object has no attribute 'i'",
+  "statusTrace" : "self = <test_case.test_cases.TestCase object at 0x0000024BAC612648>\nurl = 'http://39.98.138.157:5000/api/login'\nbody = '{\"username\":\"admin\",\"password\":\"123456\"}'\nheader = '{\"content-type\": \"application/json\"}', method = 'post'\nmethod_type = 'json', expect_value = 'success', jsonpath_value = '$.msg'\ndependency = 'loginvar'\n\n    @allure.title(\"allure报告标题\")\n    @pytest.mark.parametrize(\"url, body, header, method, method_type,expect_value, jsonpath_value, dependency\", contents)\n    def test_collection(self, url, body, header, method, method_type,expect_value, jsonpath_value, dependency):\n        # self.i = 1\n>       Logger().log().info(\"开始运行第{}条用例\", self.i)\nE       AttributeError: 'TestCase' object has no attribute 'i'\n\n..\\test_case\\test_cases.py:26: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1614943301950,
+      "stop" : 1614943302017,
+      "duration" : 67
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_cases"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-JHEF7VRV"
+  }, {
+    "name" : "thread",
+    "value" : "9352-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_cases"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "body",
+    "value" : "'{\"username\":\"admin\",\"password\":\"123456\"}'"
+  }, {
+    "name" : "dependency",
+    "value" : "'loginvar'"
+  }, {
+    "name" : "expect_value",
+    "value" : "'success'"
+  }, {
+    "name" : "header",
+    "value" : "'{\"content-type\": \"application/json\"}'"
+  }, {
+    "name" : "jsonpath_value",
+    "value" : "'$.msg'"
+  }, {
+    "name" : "method",
+    "value" : "'post'"
+  }, {
+    "name" : "method_type",
+    "value" : "'json'"
+  }, {
+    "name" : "url",
+    "value" : "'http://39.98.138.157:5000/api/login'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "78d3b7132c840a5e.json",
+  "parameterValues" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+}

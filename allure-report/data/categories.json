@@ -1,0 +1,52 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: 断言失败\nassert 300 == 200",
+      "children" : [ {
+        "name" : "title",
+        "uid" : "1f64415f1acf9662",
+        "parentUid" : "18bd194396cca0311db5d3521a4af97b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614929419711,
+          "stop" : 1614929419855,
+          "duration" : 144
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "title",
+        "uid" : "69aba91fa5250169",
+        "parentUid" : "18bd194396cca0311db5d3521a4af97b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614929422399,
+          "stop" : 1614929422621,
+          "duration" : 222
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      }, {
+        "name" : "allure报告标题",
+        "uid" : "90bfae3231d16484",
+        "parentUid" : "18bd194396cca0311db5d3521a4af97b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614943646040,
+          "stop" : 1614943646154,
+          "duration" : 114
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'cartinfo'", "300", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.httpstatus'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      } ],
+      "uid" : "18bd194396cca0311db5d3521a4af97b"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

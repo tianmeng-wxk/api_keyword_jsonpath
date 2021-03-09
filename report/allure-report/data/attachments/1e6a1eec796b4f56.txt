@@ -1,0 +1,2 @@
+INFO     logger:test_cases.py:27 开始执行第2条用例
+INFO     logger:test_cases.py:40 响应结果：{'data': [{'SKU': 'FRTSJ7676', 'price': 29.9, 'productdesc': '麒麟瓜皮薄瓜瓤嫩,就连翠衣也很清甜,瓤虽是粉红而不是深红,但甜度丝毫不减。', 'productid': 8888, 'productname': '海南麒麟瓜5斤装'}], 'httpstatus': 200}

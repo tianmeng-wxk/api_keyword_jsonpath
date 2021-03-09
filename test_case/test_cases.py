@@ -4,6 +4,7 @@ from common.common import excelData,Convert,depend
 from key_word.http import HttpClien
 import jsonpath
 from log.log import Logger
+from openpyxl.styles import PatternFill, Font
 contents = []
 if len(contents) <= 0:
     caseData = excelData().getExcel()
@@ -21,8 +22,8 @@ if len(contents) <= 0:
 class TestCase():
     i = 1
     @allure.title("title")
-    @pytest.mark.parametrize("url, body, header, method, method_type,expect_value, jsonpath_value, dependency", contents)
-    def test_collection(self, url, body, header, method, method_type,expect_value, jsonpath_value, dependency):
+    @pytest.mark.parametrize("url, body, header, method, method_type,expect_value, jsonpath_value, dependency,status,response", contents)
+    def test_collection(self, url, body, header, method, method_type,expect_value, jsonpath_value, dependency, status,response):
         Logger().log().info("开始执行第{}条用例".format(TestCase.i))
         comon=HttpClien()
         body = body.replace('\r', '').replace('\n', '').replace('\t', '') if body is not None else ""
@@ -36,7 +37,34 @@ class TestCase():
         if len(dependency)>0 and dependency.find("/")<0:
             depend[dependency] = res.content
         res = res.json()
+        import openpyxl
+        wb = openpyxl.load_workbook("../cases/case1.xlsx")
+        ws = wb["Sheet1"]
+        ws.cell(TestCase.i+1, 10).value = str(res)
         Logger().log().info("响应结果：{}".format(res))
+        # 如果响应的结果不是json串，可以通过正则提取
+        # import re
+        # res = str(res)
+        # jsonpath_value = re.findall(jsonpath_value, res)#'msg': '(.*?)'
         jsonpath_value = jsonpath.jsonpath(res,jsonpath_value)
-        assert expect_value == jsonpath_value[0],"断言失败"
-        TestCase.i = TestCase.i+1
+        TestCase.i = TestCase.i + 1
+        try:
+        # assert expect_value == jsonpath_value[0], "断言失败"
+            assert expect_value == jsonpath_value[0]
+        except:
+            ws.cell(TestCase.i, 9).value = "false"
+            ws.cell(TestCase.i, 9).fill = PatternFill('solid', fgColor='FF0000')
+            ws.cell(TestCase.i, 9).font = Font(bold=True)
+            wb.save("../cases/case1.xlsx")
+            assert False
+        else:
+            ws.cell(TestCase.i, 9).value = "pass"
+            ws.cell(TestCase.i, 9).fill = PatternFill('solid', fgColor='66ff00')
+            ws.cell(TestCase.i, 9).font = Font(bold=True)
+            assert True
+        wb.save("../cases/case1.xlsx")
+        wb.close()
+
+
+if __name__ == '__main__':
+    pytest.main()
